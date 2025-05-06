@@ -1,0 +1,22 @@
+.category-container {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-size: cover;
+    
+  }
+  
+  .category-box {
+    text-align:center;
+    padding:10px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    border-radius:  8px;
+
+  }
+  
+  .category-box img {
+    width:120px;
+    height:80px;
+}
