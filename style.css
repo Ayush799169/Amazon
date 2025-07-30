@@ -1,22 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial;
     border: border-box;
 }
 .navbar{
-    height:55px;
+    height:50px;
     background-color :#010e0e;
     color: white;
 display: flex;
+padding: 0 20px;
 align-items: center;
-justify-content: space-evenly;
+justify-content: space-between;
+cursor: pointer;
+ padding-bottom: 10px;
 }
 .nav-logo{
     height: 30px;
     width:100px;
     margin-left:10px;
-    margin: top 2px;
+    margin-top: 2px;
     padding-top: 10px;
 
 }
@@ -56,7 +58,7 @@ margin-left: 15px;
     display: flex;
     justify-content: space-evenly;
     background-color: darkorange;
-    width: 600px;
+    width:700px;
     height:40px;
     border-radius:3px;    
 }
@@ -64,7 +66,7 @@ margin-left: 15px;
     background-color: #f3f3f3;
     width: 50px;
     text-align:center;
-    border-top-left-radius:4px;
+    border-top-left-radius:2px;
     border-bottom-left-radius:4px;
  border: none;
 }
@@ -73,6 +75,8 @@ margin-left: 15px;
     width:100%;
     font-size: 1rem;
     border: none;
+    margin-right: 4px;
+    padding-left: 4px;
 }
 .search-icon{
     width: 45px;
@@ -135,19 +139,20 @@ span {
 }
 /**panel**/
 .panel{
-    height:60px;
+    height:50px;
     background-color:  #222f3d; 
     display:flex;
     color: #cccccc;
     align-items: center;
     justify-content: space-evenly;
-    font-size:20px;
+    font-size:25px;
 }
 .panel-ops p{
     display:inline-flex;
     color: #f3f3f3;
-    font-size:15px;
-    margin-left: 10px;
+    font-size:25px;
+    margin-left:20px;
+    justify-content: space-between;
 }
 .nav-item{
     border: 1px solid#ccc;
@@ -157,30 +162,37 @@ span {
     font-weight: bold;
     cursor: pointer;
     display: inline-flex;
-    font-size:16px;
+    font-size:20px;
 }
 /**hero.section**/
 .hero-section{
-background-image:url("today\ img.jpg");
+background-image:url("amzn.jpg");
 background-size: cover;
 height:450px;
 display: flex;
 justify-content: center;
 align-items: flex-end;
+
 }
 .hero-massage{
 background-color: white;
 color:black;
-height: 30px;
+height:30px;
 display: flex;
 align-items:center;
-justify-content:center;
-font-size:1rem;
-width: 70%;
-margin-bottom:80px;
+justify-content:space-evenly;
+width:60%;
+margin-bottom:50px;
+padding-bottom: 5px;
+
+}
+.hero-massage p{
+    font-size: 1rem;
 }
 .hero-massage a{
     color: #007185;
+    font-size: 1rem;
+    cursor: pointer;
 }
 /**shop**/
 .shop-section{
@@ -199,10 +211,14 @@ margin-top:5px;
 justify-content: space-between;
 flex-direction:column;
 }
-
+.box p{
+    font-size:20px;
+}
  .box-img{
         height:280px;
+        width: 100%;
         background-size:cover;
+        background-position: center;
         margin-top:1rem;
         margin-bottom:1rem;
     }
@@ -212,14 +228,21 @@ flex-direction:column;
         margin-right:1rem;
     }
     .box-content p{
-        color: #21c1c1;
+        color: #2162a1;
         margin:1rem;
     }
-
-     /**footer**/
-     footer{
-        margin:30px;
-     }
+    .box-section{
+background-image:url("28eed2c6-3997-41ee-bc7a-5e7ef1284b84.jpg");
+background-size: cover;
+height:450px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+margin-top:10px;
+margin-bottom: 10px;
+    }
+    
+ 
      .foot-panel1{
         background-color: #37475a;
         color: white;
@@ -235,45 +258,63 @@ flex-direction:column;
         color: white;
         height:300px;
         justify-content: space-evenly;
-
+        font-size:14px;
      }
-     ul {
-        margin-top:20px;
+     .foot-panel2 p{
+font-size:20px;
      }
      ul a {
-display:block;
-margin-top:10px;
-font-size: 0.85;
+display:flex;
+margin-top:15px;
+font-size:1rem;
 color: #dddddd;
+cursor: pointer;
 }
+
 .foot-panel3{
     background-color: #222f3d;
     color: white;
     border-top: 0.5px solid white;
-height:70px;
+height:60px;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .logo{
     background-image: url("White-Amazon-Logo-PNG-HD-Quality.png");
     background-size:cover;
     height:30px;
     width: 100px;
+    cursor: pointer;
 }
-.foot-panel4{
-    background-color: #0f1111;
-    color: white;
-    height:80px;
-    align-items: center;
+
+.footer-services{
+ display:flex;
+        background-color:#131a22;
+        color: white;
+        height:250px;
+        justify-content:space-evenly;  
+                    
+
 }
-    .pages{
-        text-align: center;
-        font-size: 0.7rem;
-padding-top: 25px;
-    }
-    .copyright{
-        text-align: center;
-        margin-top:5px ;
-        font-size:0.7rem;
-    }
+
+p{
+font-size:14px;
+margin-top: 15px;
+cursor: pointer;
+ }
+
+
+.footer-bottom {
+  background-color: #131a22;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+    
